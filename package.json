@@ -1,10 +1,13 @@
 {
   "name": "invoked-once",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Invoke a function only once",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/tape test/*.js"
+  },
+  "devDependencies": {
+    "tape": "^4.9.1"
   },
   "repository": {
     "type": "git",

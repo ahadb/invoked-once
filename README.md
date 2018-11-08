@@ -23,3 +23,28 @@ let once = invokeOnce(() => console.log('Invoked!'))
 once() //=> Invoked!
 once() //=> undefined
 ```
+
+### Test
+
+Make sure you `npm install` to fetch tape:
+
+`node test.js`
+
+```bash
+TAP version 13
+# invokedOnce
+ok 1 should be equal
+ok 2 should be equal
+ok 3 should be equal
+ok 4 should throw
+ok 5 should throw
+# should invoke the function once
+ok 6 should be equivalent
+
+1..6
+# tests 6
+# pass  6
+
+# ok
+```
+
